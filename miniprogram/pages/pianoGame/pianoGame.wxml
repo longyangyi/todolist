@@ -1,0 +1,20 @@
+<!--miniprogram/pages/piano/pianoGame.wxml-->
+
+<view class="pianoBoard">
+  <button class='pianoButton' bindtap="pianoButton1Tap">1</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton2Tap">2</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton3Tap">3</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton4Tap">4</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton5Tap">5</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton6Tap">6</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton7Tap">7</button>
+  <view class="line"></view>
+  <button class='pianoButton' bindtap="pianoButton8Tap">8</button>
+
+</view>

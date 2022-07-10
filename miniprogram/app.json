@@ -1,0 +1,55 @@
+{
+    "pages": [
+        "pages/todolist/todolist",
+        "pages/jinianri/jinianri",
+        "pages/chengyuGame/chengyuGame",
+        "pages/jianjie/jianjie",
+        "pages/mainPage/mainPage",
+        "pages/pianoGame/pianoGame"
+    ],
+    "window": {
+        "backgroundColor": "#d6F3F3",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#d6F3F3",
+        "navigationBarTitleText": "任务清单",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2",
+    "tabBar": {
+        "color": "#a9b7b7",
+        "selectedColor": "#11cd6e",
+        "borderStyle": "white",
+        "list": [
+            {
+                "selectedIconPath": "image/list.png",
+                "iconPath": "image/list.png",
+                "pagePath": "pages/todolist/todolist",
+                "text": "任务"
+            },
+            {
+                "selectedIconPath": "image/day.png",
+                "iconPath": "image/day.png",
+                "pagePath": "pages/jinianri/jinianri",
+                "text": "纪念日"
+            },
+            {
+                "selectedIconPath": "image/game.png",
+                "iconPath": "image/game.png",
+                "pagePath": "pages/chengyuGame/chengyuGame",
+                "text": "游戏"
+            },
+            {
+                "selectedIconPath": "image/jianjie.png",
+                "iconPath": "image/jianjie.png",
+                "pagePath": "pages/jianjie/jianjie",
+                "text": "其他"
+            }
+        ]
+    }, 
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于获取当地天气信息"
+        }
+    }
+}

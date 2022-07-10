@@ -1,0 +1,11 @@
+<!--miniprogram/pages/mainPage/mainPage.wxml-->
+<view class="container">
+  <view class="titleView">
+    <text class="titleText" style="font-size:50rpx; color:rgb(50, 53, 8);">嘿嘿猜成语</text>
+  </view>
+  <view class="chooseView">
+    <button class='chengyuButton' bindtap="navigateToCaichengyu">猜成语</button>
+    <button class='pianoButton' bindtap="navigateToPiano">钢琴</button>
+    <!--<button class='suanshuButton' bindtap="navigateToSuanshu">算术</button>-->
+  </view>
+</view>

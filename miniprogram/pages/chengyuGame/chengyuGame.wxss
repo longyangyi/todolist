@@ -1,0 +1,32 @@
+/* miniprogram/pages/chengyuGame/chengyuGame.wxss */
+page{
+  background-color: rgb(214, 243, 243);
+}
+.caiChengYu {
+  display: flex;
+  flex-direction: column;
+}
+.questionView {
+  
+}
+.questionText {
+  
+}
+.questionView {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.questionText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.choice {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.choiceButton {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(217, 255, 0);
+}

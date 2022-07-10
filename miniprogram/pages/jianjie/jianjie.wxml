@@ -1,0 +1,36 @@
+<!--pages/jianjie/jianjie.wxml-->
+<view class="container">
+    <text class="dateText" decode="true">{{dateText}}</text>
+    <view class="weatherContainer">
+        <view class="location">
+            <view class="province">{{province}}</view>
+            <text decode="true">&nbsp;</text>
+            <view class="city">{{city}}</view>
+        </view>
+        <view class="main">
+            <view class="weather">{{weather}}</view>
+            <text decode="true">&nbsp;&nbsp;&nbsp;</text>
+            <view class="temperature">{{temperature}}</view>
+        </view>
+
+        <view class="other">
+            <view class="humidity">{{humidity}}</view>
+            <text decode="true">&nbsp;&nbsp;&nbsp;</text>
+            <view class="windpower">{{windpower}}</view>
+        </view>
+    </view>
+
+    <view class="meiriyiju">《每日一句》</view>
+    <view class="dailyNote">{{dailyNote}}</view>
+
+    <view class="contactContainer">
+        <view class="contact">
+            <image class="icon" src="../../image/email.png"></image>
+            <text decode="true">&nbsp;联系方式：louisyi@foxmail.com</text>
+        </view>
+        <view class="contact">
+            <image class="icon" src="../../image/developer.png"></image>
+            <text decode="true">&nbsp;开发人员：易哟喂</text>
+        </view>
+    </view>
+</view>

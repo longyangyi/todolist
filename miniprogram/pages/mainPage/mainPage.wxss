@@ -1,0 +1,31 @@
+/* miniprogram/pages/mainPage/mainPage.wxss */
+page{
+  height: 100%;
+  background-color: bisque;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.titleText {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  
+}
+.chooseView{
+  margin-top: 20px;
+}
+.chengyuButton{
+  background-color: rgb(114, 150, 248);
+}
+.suanshuButton{
+  background-color: rgb(114, 150, 248);
+  margin-top: 20px;
+}
+.pianoButton{
+  background-color: rgb(114, 150, 248);
+  margin-top: 20px;
+}

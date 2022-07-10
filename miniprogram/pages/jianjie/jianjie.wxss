@@ -1,0 +1,78 @@
+/* pages/jianjie/jianjie.wxss */
+page {
+    background-color: rgb(214, 243, 243);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.dateText{
+    margin-top: 10px;
+    margin-right: 10px;
+    align-self: flex-end;
+}
+.weatherContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    width: 100%;
+    border-radius: 5%;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.weather{
+    font-weight: 800;
+}
+
+.other{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    margin-top: 10px;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.meiriyiju{
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.dailyNote {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contactContainer{
+    position: fixed;
+    bottom: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}

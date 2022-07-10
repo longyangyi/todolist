@@ -1,0 +1,31 @@
+<!--pages/jinianri/jinianri.wxml-->
+
+<view class="container">
+    <view class="boader"></view>
+    <textarea class="input" auto-height='true' placeholder="输入事件名称" maxlength="20" bindinput="bindEventInput" value="{{eventText}}"></textarea>
+    <view>
+        <picker mode="date" value="{{eventDate}}" start="1900-01-01" end="2100-01-01" bindchange="bindDateChange">
+            <view class="picker">
+                <image class="minilogo" src="../../image/richeng.png"></image>
+                <text decode="true">&nbsp;&nbsp;选择日期: {{eventDate}}</text>
+            </view>
+            <view class="boader"></view>
+        </picker>
+    </view>
+    <textarea class="input" auto-height='true' placeholder="备注" maxlength="200" bindinput="bindNoteInput" value="{{eventNote}}"></textarea>
+    <button class="button" bindtap="addEventTap">添加事件</button>
+
+    <scroll-view class='scrollViewClass'>
+        <label class="item" wx:for="{{eventList}}" wx:key="key">
+            <view class='taskItemClass' id="{{item.timestamp}}" bindlongpress="taskLongPress">
+                <view class="leftContainer">
+                    <view class="eventText">{{item.eventText}}</view>
+                    <view class="eventNote">{{item.eventNote}}</view>
+                    <view class="eventDate">{{item.eventDate}}</view>
+                </view>
+                <view class="timeGapText">{{item.timeGap}}</view>
+            </view>
+        </label>
+    </scroll-view>
+
+</view>

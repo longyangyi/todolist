@@ -1,0 +1,43 @@
+<!--miniprogram/pages/todolist/todolist.wxml-->
+
+<view class='container'>
+
+    <view class="boader"></view>
+    <textarea class="newTaskInputText" auto-height='true' placeholder="输入新任务" maxlength="200" bindinput="taskInput" value="{{textAreaValue}}"></textarea>
+    <button class="addTaskButton" bindtap="addTaskTap">添加任务</button>
+    <view class="boader"></view>
+
+
+  <view class="border"></view>
+
+
+  <!--待完成：标星号的置顶、长按删除-->
+
+  <scroll-view class='scrollViewClass'>
+    <checkbox-group bindchange="unfinishedCheckboxChange">
+      <label class="item" wx:for="{{unfinishedList}}" wx:key="key">
+        <view class='taskItemClass' id="{{item.timestamp}}" bindlongpress="taskLongPress">
+          <checkbox class="checkbox" value="{{item.timestamp}}" checked="{{item.finished}}"></checkbox>
+          <view class="taskText">{{item.taskContent}}</view>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="boader"></view>
+  </scroll-view>
+
+  <view class="yiwanchengClass">已完成</view>
+
+  <scroll-view class='scrollViewClass'>
+    <view class="boader"></view>
+    <checkbox-group bindchange="finishedCheckboxChange">
+      <label class="item" wx:for="{{finishedList}}" wx:key="key">
+        <view class='taskItemClass' id="{{item.timestamp}}" bindlongpress="taskLongPress">
+          <checkbox class="checkbox" value="{{item.timestamp}}" checked="{{item.finished}}"></checkbox>
+          <view class="finishedTaskText">{{item.taskContent}}</view>
+        </view>
+      </label>
+    </checkbox-group>
+    <view class="boader"></view>
+  </scroll-view>
+
+</view>

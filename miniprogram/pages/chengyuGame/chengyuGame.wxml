@@ -1,0 +1,17 @@
+<!--miniprogram/pages/chengyuGame/chengyuGame.wxml-->
+<view class="caiChengYu">
+  <view class="questionView">
+    <text class="questionText" style="font-size:80rpx; color:#000;">{{chengyuQuestion}}</text>
+  </view>
+  <view class="choice">
+    <button class="choiceButton" bindtap="choice1Tap">{{choice1Text}}</button>
+    <button class="choiceButton" bindtap="choice2Tap">{{choice2Text}}</button>
+    <button class="choiceButton" bindtap="choice3Tap">{{choice3Text}}</button>
+    <button class="choiceButton" bindtap="choice4Tap">{{choice4Text}}</button>
+  </view>
+  <block wx:if="{{showErrorChoiceDialog}}">
+    <view class="errorChoiceDialog">
+      <text>答案错误</text>
+    </view>
+  </block>
+</view>
