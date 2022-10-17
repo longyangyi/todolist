@@ -1,5 +1,6 @@
 <!--pages/jianjie/jianjie.wxml-->
 <view class="container">
+    <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad> -->
     <text class="dateText" decode="true">{{dateText}}</text>
     <view class="weatherContainer">
         <view class="location">
@@ -33,4 +34,5 @@
             <text decode="true">&nbsp;开发人员：易哟喂</text>
         </view>
     </view>
+    
 </view>

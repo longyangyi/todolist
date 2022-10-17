@@ -1,5 +1,6 @@
 <!--miniprogram/pages/chengyuGame/chengyuGame.wxml-->
 <view class="caiChengYu">
+  <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
   <view class="questionView">
     <text class="questionText" style="font-size:80rpx; color:#000;">{{chengyuQuestion}}</text>
   </view>
@@ -9,6 +10,7 @@
     <button class="choiceButton" bindtap="choice3Tap">{{choice3Text}}</button>
     <button class="choiceButton" bindtap="choice4Tap">{{choice4Text}}</button>
   </view>
+  
   <block wx:if="{{showErrorChoiceDialog}}">
     <view class="errorChoiceDialog">
       <text>答案错误</text>
