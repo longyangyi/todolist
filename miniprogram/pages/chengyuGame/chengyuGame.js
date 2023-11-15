@@ -6,6 +6,9 @@ var chengyuNum = 500;
 var answer;
 var answerIndex;
 
+var correct = 0;
+var fault = 0;
+
 Page({
 
   /**
@@ -13,6 +16,7 @@ Page({
    */
   data: {
     showErrorChoiceDialog: false,
+    correctRate: "0",
     chengyuQuestion: "问题",
     choice1Text: "选项1",
     choice2Text: "选项2",
@@ -162,6 +166,10 @@ Page({
     }
   },
   correctAnswer: function (e) {
+    correct++;
+    this.setData({
+      correctRate: parseInt(correct * 100 / (correct + fault))
+    })
     wx.showToast({
       icon: "success",
       title: "答案正确",
@@ -178,6 +186,10 @@ Page({
 
   },
   wrongAnswer: function (e) {
+    fault++;
+    this.setData({
+      correctRate: parseInt(correct * 100 / (correct + fault))
+    })
     wx.showToast({
       icon: "none",
       title: "答案错误",

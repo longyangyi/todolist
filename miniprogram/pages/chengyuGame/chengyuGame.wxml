@@ -1,7 +1,8 @@
 <!--miniprogram/pages/chengyuGame/chengyuGame.wxml-->
 <view class="caiChengYu">
-  <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
+  <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad> -->
   <view class="questionView">
+    <text>正确率：{{correctRate}}%</text>
     <text class="questionText" style="font-size:80rpx; color:#000;">{{chengyuQuestion}}</text>
   </view>
   <view class="choice">
@@ -16,4 +17,6 @@
       <text>答案错误</text>
     </view>
   </block>
+  <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad>
+  <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
 </view>

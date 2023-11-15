@@ -1,11 +1,11 @@
 <!--miniprogram/pages/todolist/todolist.wxml-->
 
 <view class='container'>
-  <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
-    <view class="boader"></view>
-    <textarea class="newTaskInputText" auto-height='true' placeholder="输入新任务" maxlength="200" bindinput="taskInput" value="{{textAreaValue}}"></textarea>
-    <button class="addTaskButton" bindtap="addTaskTap">添加任务</button>
-    <view class="boader"></view>
+  <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad> -->
+  <view class="boader"></view>
+  <textarea class="newTaskInputText" auto-height='true' placeholder="输入新任务" maxlength="200" bindinput="taskInput" value="{{textAreaValue}}"></textarea>
+  <button class="addTaskButton" bindtap="addTaskTap">添加任务</button>
+  <view class="boader"></view>
 
 
   <view class="border"></view>
@@ -19,12 +19,14 @@
         <view class='taskItemClass' id="{{item.timestamp}}" bindlongpress="taskLongPress">
           <checkbox class="checkbox" value="{{item.timestamp}}" checked="{{item.finished}}"></checkbox>
           <view class="taskText">{{item.taskContent}}</view>
+          <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
         </view>
       </label>
     </checkbox-group>
     <view class="boader"></view>
   </scroll-view>
 
+  <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad> -->
   <view class="yiwanchengClass">已完成</view>
 
   <scroll-view class='scrollViewClass'>
@@ -34,10 +36,13 @@
         <view class='taskItemClass' id="{{item.timestamp}}" bindlongpress="taskLongPress">
           <checkbox class="checkbox" value="{{item.timestamp}}" checked="{{item.finished}}"></checkbox>
           <view class="finishedTaskText">{{item.taskContent}}</view>
+          <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
         </view>
       </label>
     </checkbox-group>
     <view class="boader"></view>
   </scroll-view>
 
+  <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad>
+  <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
 </view>

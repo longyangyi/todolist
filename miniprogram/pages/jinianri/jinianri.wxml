@@ -1,7 +1,7 @@
 <!--pages/jinianri/jinianri.wxml-->
 
 <view class="container">
-    <!-- <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
+    <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad> -->
     <view class="boader"></view>
     <textarea class="input" auto-height='true' placeholder="输入事件名称" maxlength="20" bindinput="bindEventInput" value="{{eventText}}"></textarea>
     <view>
@@ -28,4 +28,6 @@
             </view>
         </label>
     </scroll-view>
+    <!-- <ad unit-id="adunit-2ad7d5415377407f" ad-type="video" ad-theme="white"></ad>
+    <ad unit-id="adunit-009d897dc0eacc93"></ad> -->
 </view>
