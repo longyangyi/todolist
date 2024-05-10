@@ -27,11 +27,16 @@
     <view class="contactContainer">
         <view class="contact">
             <image class="icon" src="../../image/email.png"></image>
-            <text decode="true">&nbsp;联系方式：louisyi@foxmail.com</text>
+            <text decode="true">&nbsp;联系方式：yly822@qq.com</text>
         </view>
         <view class="contact">
             <image class="icon" src="../../image/developer.png"></image>
             <text decode="true">&nbsp;开发人员：易哟喂</text>
+        </view>
+        <view class="contact">
+            <image class="icon" src="../../image/heart.png"></image>
+            <text decode="true">&nbsp;v+0</text>
+            <image class="icon" src="../../image/heart.png"></image>
         </view>
     </view>
 </view>
